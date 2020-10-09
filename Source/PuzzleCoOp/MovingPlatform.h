@@ -21,16 +21,15 @@ public:
 protected:
 
 	UPROPERTY(EditAnywhere, Category="Movement")
-	FVector MoveDir = FVector::ForwardVector;
+	float TimeToGoal = 3.f;
 
-	UPROPERTY(EditAnywhere, Category="Movement")
-	float MaxSpeed = 20.f;
+	UPROPERTY(EditAnywhere, Category="Movement", Meta=(MakeEditWidget=true))
+	FVector TargetLocation;
 
-	UPROPERTY(EditAnywhere, Category="Movement")
-	float TurnCooldown = 3.f;
-	
+	UPROPERTY(Transient, VisibleAnywhere)	
 	float MoveSpeed = 20.f;
-	
+	UPROPERTY(Transient, VisibleAnywhere, Category="Movement")
+	FVector MoveDir = FVector::ForwardVector;
 	UPROPERTY(Transient)
 	FTimerHandle SwitchDirTimer;
 
@@ -39,12 +38,13 @@ protected:
 	
 public:
 	
-	virtual void Tick(float DeltaTime) override;
 	virtual void BeginPlay() override;
-
+	virtual void Tick(float DeltaTime) override;
+	
 private:
 
 	void StartTurnAroundTimer();
+	void CalcMoveParams();
 	
 };
 

@@ -16,9 +16,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.cpp" />
       </list>
     </option>
   </component>
@@ -255,7 +256,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602258840863</updated>
-      <workItem from="1602258895523" duration="2859000" />
+      <workItem from="1602258895523" duration="7677000" />
     </task>
     <servers />
   </component>

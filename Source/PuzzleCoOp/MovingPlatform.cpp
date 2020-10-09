@@ -3,13 +3,16 @@
 
 #include "MovingPlatform.h"
 
+#include "DrawDebugHelpers.h"
+
 AMovingPlatform::AMovingPlatform()
 {
     PrimaryActorTick.bCanEverTick = true;
     SetMobility(EComponentMobility::Movable);
     MoveDir = FVector::ForwardVector;
-    MaxSpeed = 20.f;
-    MoveSpeed = MaxSpeed;
+    // ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube"));
+    // UStaticMesh* DefaultMesh = MeshAsset.Object;
+    // GetStaticMeshComponent()->SetStaticMesh(DefaultMesh);
 }
 
 void AMovingPlatform::BeginPlay()
@@ -18,7 +21,12 @@ void AMovingPlatform::BeginPlay()
     
     if (HasAuthority())
     {
-        MoveSpeed = MaxSpeed;
+        SetReplicates(true);
+        SetReplicateMovement(true);
+
+        //set MoveSpeed and MoveDir
+        CalcMoveParams();
+        
         StartTurnAroundTimer();
     }
 }
@@ -34,6 +42,9 @@ void AMovingPlatform::Tick(float DeltaTime)
         Location += MoveDir * MoveSpeed * DeltaTime;
         SetActorLocation(Location);
     }
+
+    DrawDebugLine(GetWorld(), GetActorLocation(),GetActorLocation() + MoveDir * 300, FColor::Red);
+    
 }
 
 void AMovingPlatform::SwitchDirections()
@@ -44,7 +55,18 @@ void AMovingPlatform::SwitchDirections()
 
 void AMovingPlatform::StartTurnAroundTimer()
 {
-    GetWorld()->GetTimerManager().SetTimer(SwitchDirTimer, this, &AMovingPlatform::SwitchDirections, TurnCooldown, false);
+    GetWorld()->GetTimerManager().SetTimer(SwitchDirTimer, this, &AMovingPlatform::SwitchDirections, TimeToGoal, false);
+}
+
+void AMovingPlatform::CalcMoveParams()
+{
+    // calc move direction towards target
+    const FVector TargetWorldPos = GetTransform().TransformPosition(TargetLocation);
+    MoveDir = (TargetWorldPos- GetActorLocation()).GetSafeNormal();
+
+    // calc move speed needed to get to target in "TimeToGoal" time
+    const float DistanceToTravel = FVector::Distance(TargetWorldPos, GetActorLocation());
+    MoveSpeed = DistanceToTravel / TimeToGoal;
 }
 
 
