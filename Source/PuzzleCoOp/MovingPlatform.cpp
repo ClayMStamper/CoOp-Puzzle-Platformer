@@ -43,8 +43,6 @@ void AMovingPlatform::Tick(float DeltaTime)
         SetActorLocation(Location);
     }
 
-    DrawDebugLine(GetWorld(), GetActorLocation(),GetActorLocation() + MoveDir * 300, FColor::Red);
-    
 }
 
 void AMovingPlatform::SwitchDirections()
