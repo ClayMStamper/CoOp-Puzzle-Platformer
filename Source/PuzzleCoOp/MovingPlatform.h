@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ButtonActivatable.h"
 #include "Engine/StaticMeshActor.h"
 #include "MovingPlatform.generated.h"
 
@@ -32,12 +33,16 @@ protected:
 	FVector MoveDir = FVector::ForwardVector;
 	UPROPERTY(Transient)
 	FTimerHandle SwitchDirTimer;
+	UPROPERTY(EditAnywhere, Category="Movement")
+	bool NeedsActivationToMove = false;
 
+	bool bIsActivated = false;
+	
 	UFUNCTION()
 	void SwitchDirections();
 	
 public:
-	
+
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 	
@@ -45,6 +50,6 @@ private:
 
 	void StartTurnAroundTimer();
 	void CalcMoveParams();
-	
+
 };
 

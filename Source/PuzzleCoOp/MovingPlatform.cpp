@@ -10,17 +10,18 @@ AMovingPlatform::AMovingPlatform()
     PrimaryActorTick.bCanEverTick = true;
     SetMobility(EComponentMobility::Movable);
     MoveDir = FVector::ForwardVector;
-    // ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube"));
-    // UStaticMesh* DefaultMesh = MeshAsset.Object;
-    // GetStaticMeshComponent()->SetStaticMesh(DefaultMesh);
 }
 
 void AMovingPlatform::BeginPlay()
 {
     Super::BeginPlay();
-    
+
     if (HasAuthority())
     {
+
+        // if it doesn't rely on activation, then start as activated
+        bIsActivated = !NeedsActivationToMove;
+    
         SetReplicates(true);
         SetReplicateMovement(true);
 
@@ -38,12 +39,22 @@ void AMovingPlatform::Tick(float DeltaTime)
     
     if (HasAuthority())
     {
-        FVector Location = GetActorLocation();
-        Location += MoveDir * MoveSpeed * DeltaTime;
-        SetActorLocation(Location);
+        // if activated, then move
+        if (bIsActivated)
+        {
+            FVector Location = GetActorLocation();
+            Location += MoveDir * MoveSpeed * DeltaTime;
+            SetActorLocation(Location);
+        }
     }
 
 }
+//
+// void AMovingPlatform::Activate(AButtonPlatform* ActivatedBy)
+// {
+//     if (HasAuthority())
+//         bIsActivated = true;
+// }
 
 void AMovingPlatform::SwitchDirections()
 {
