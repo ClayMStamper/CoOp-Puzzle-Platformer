@@ -36,6 +36,7 @@ protected:
 	UPROPERTY(EditAnywhere, Category="Movement")
 	bool NeedsActivationToMove = false;
 
+	UPROPERTY(VisibleAnywhere)
 	bool bIsActivated = false;
 	
 	UFUNCTION()
@@ -45,8 +46,8 @@ public:
 
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
-	virtual void Activate_Implementation(UObject* ActivatedBy);
-	virtual void Deactivate_Implementation(UObject* DeactivatedBy);
+	virtual void Activate(UObject* ActivatedBy) override;
+	virtual void Deactivate(UObject* DeactivatedBy) override;
 	
 private:
 

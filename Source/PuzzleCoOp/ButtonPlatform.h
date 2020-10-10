@@ -7,6 +7,7 @@
 #include "GameFramework/Actor.h"
 #include "ButtonPlatform.generated.h"
 
+
 UCLASS()
 class PUZZLECOOP_API AButtonPlatform : public AActor
 {
@@ -36,6 +37,6 @@ private:
 	void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	UPROPERTY(EditAnywhere, Category="Activation")
-	UObject* PlatformToActivateObjectRef;
+	TArray<UObject*> ThingsToActivate;
 	
 };

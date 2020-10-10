@@ -50,13 +50,15 @@ void AMovingPlatform::Tick(float DeltaTime)
 
 }
 
-void AMovingPlatform::Activate_Implementation(UObject* ActivatedBy)
+void AMovingPlatform::Activate(UObject* ActivatedBy)
 {
-    UE_LOG(LogTemp, Warning, TEXT("I, %s have been activated!"), *GetOwner()->GetName());
+    bIsActivated = true;
 }
 
-void AMovingPlatform::Deactivate_Implementation(UObject* DeactivatedBy)
+void AMovingPlatform::Deactivate(UObject* DeactivatedBy)
 {
+    if (NeedsActivationToMove)
+        bIsActivated = false;
 }
 
 //

@@ -24,8 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ButtonPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ButtonPlatform.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" afterDir="false" />
@@ -56,11 +56,11 @@
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/IButtonActivatible.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/IButtonActivatable.h" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
       </list>
     </option>
   </component>
@@ -301,7 +301,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602258840863</updated>
       <workItem from="1602258895523" duration="20104000" />
-      <workItem from="1602344107347" duration="4936000" />
+      <workItem from="1602344107347" duration="6494000" />
     </task>
     <servers />
   </component>

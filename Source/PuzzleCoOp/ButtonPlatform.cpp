@@ -36,24 +36,34 @@ void AButtonPlatform::Tick(float DeltaTime)
 void AButtonPlatform::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-
-	UE_LOG(LogTemp, Warning, TEXT("Activated!"));
+	for (UObject* ThingToActivate : ThingsToActivate)
+	{
+		if (ThingToActivate)
+		{
+			Cast<IButtonActivatable>(ThingToActivate)->Activate(this);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Platform to activate's UObject* is NULL"));
+		}
+	}
 	
-	if (PlatformToActivateObjectRef)
-	{
-		Cast<IButtonActivatable>(PlatformToActivateObjectRef)->Activate(this);
-	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("Platform to activate's UObject* is NULL"));
-	}
-
 }
 
 void AButtonPlatform::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Deactivated!"));
+	for (UObject* ThingToActivate : ThingsToActivate)
+	{
+		if (ThingToActivate)
+		{
+			Cast<IButtonActivatable>(ThingToActivate)->Deactivate(this);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Platform to activate's UObject* is NULL"));
+		}
+	}
 }
 
 
