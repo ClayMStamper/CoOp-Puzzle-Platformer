@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +53,9 @@
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/IButtonActivatable.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
       </list>
     </option>
   </component>
@@ -298,7 +296,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602258840863</updated>
       <workItem from="1602258895523" duration="20104000" />
-      <workItem from="1602344107347" duration="9524000" />
+      <workItem from="1602344107347" duration="9960000" />
     </task>
     <servers />
   </component>

@@ -37,6 +37,6 @@ private:
 	void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	UPROPERTY(EditAnywhere, Category="Activation")
-	TArray<UObject*> ThingsToActivate;
+	TArray<AActor*> ThingsToActivate;
 	
 };
