@@ -43661,6 +43661,8 @@
       <e p="UE4Game.Target.cs" t="Include" />
     </e>
     <e p="X:\UnrealProgs\PuzzleCoOp" t="IncludeFlat">
+      <e p=".gitattributes" t="Include" />
+      <e p=".gitignore" t="Include" />
       <e p="Config" t="Include">
         <e p="DefaultEditor.ini" t="Include" />
         <e p="DefaultEditorPerProjectUserSettings.ini" t="Include" />
@@ -43675,11 +43677,15 @@
         <e p="PuzzleCoOp.vcxproj" t="IncludeRecursive" />
         <e p="UE4.vcxproj" t="IncludeRecursive" />
       </e>
+      <e p="LaunchClient.bat" t="Include" />
+      <e p="LaunchServer.bat" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="PuzzleCoOp.sln" t="IncludeFlat" />
       <e p="PuzzleCoOp.uproject" t="Include" />
       <e p="Source" t="Include">
         <e p="PuzzleCoOp" t="Include">
+          <e p="ButtonPlatform.cpp" t="Include" />
+          <e p="ButtonPlatform.h" t="Include" />
           <e p="MovingPlatform.cpp" t="Include" />
           <e p="MovingPlatform.h" t="Include" />
           <e p="PuzzleCoOp.Build.cs" t="Include" />

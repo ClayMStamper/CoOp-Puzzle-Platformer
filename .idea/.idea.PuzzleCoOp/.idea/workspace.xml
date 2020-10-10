@@ -11,6 +11,8 @@
     <setting file="file://$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -20,6 +22,8 @@
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
       </list>
     </option>
   </component>
@@ -256,7 +260,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602258840863</updated>
-      <workItem from="1602258895523" duration="9388000" />
+      <workItem from="1602258895523" duration="16416000" />
     </task>
     <servers />
   </component>
