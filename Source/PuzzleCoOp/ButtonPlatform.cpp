@@ -38,6 +38,15 @@ void AButtonPlatform::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor
 {
 
 	UE_LOG(LogTemp, Warning, TEXT("Activated!"));
+	
+	if (PlatformToActivateObjectRef)
+	{
+		Cast<IButtonActivatable>(PlatformToActivateObjectRef)->Activate(this);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Platform to activate's UObject* is NULL"));
+	}
 
 }
 

@@ -8,7 +8,7 @@
 
 
 // This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+UINTERFACE(MinimalAPI, Blueprintable)
 class UButtonActivatable : public UInterface
 {
 	GENERATED_BODY()
@@ -23,9 +23,7 @@ class PUZZLECOOP_API IButtonActivatable
 	
 public:
 
-	UFUNCTION()
 	virtual void Activate(UObject* ActivatedBy){};
-	UFUNCTION()
 	virtual void Deactivate(UObject* DeactivatedBy){};
 	
 };

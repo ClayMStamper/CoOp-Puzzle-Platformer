@@ -11,7 +11,7 @@
  * 
  */
 UCLASS()
-class PUZZLECOOP_API AMovingPlatform : public AStaticMeshActor
+class PUZZLECOOP_API AMovingPlatform : public AStaticMeshActor, public IButtonActivatable
 {
 	GENERATED_BODY()
 	
@@ -45,6 +45,8 @@ public:
 
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
+	virtual void Activate_Implementation(UObject* ActivatedBy);
+	virtual void Deactivate_Implementation(UObject* DeactivatedBy);
 	
 private:
 

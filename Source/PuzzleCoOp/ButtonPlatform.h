@@ -35,7 +35,7 @@ private:
 	UFUNCTION()
 	void OnOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
-	// UPROPERTY(EditAnywhere)
-	// TScriptInterface<TArray<<IButtonActivatable*>> PlatformsToActivate;
+	UPROPERTY(EditAnywhere, Category="Activation")
+	UObject* PlatformToActivateObjectRef;
 	
 };

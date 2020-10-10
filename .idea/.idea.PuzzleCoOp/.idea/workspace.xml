@@ -23,13 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" afterDir="false" />
@@ -57,10 +54,10 @@
       <list>
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOpCharacter.h" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/IButtonActivatible.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/IButtonActivatable.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonActivatable.h" />
@@ -304,7 +301,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602258840863</updated>
       <workItem from="1602258895523" duration="20104000" />
-      <workItem from="1602344107347" duration="1969000" />
+      <workItem from="1602344107347" duration="4936000" />
     </task>
     <servers />
   </component>
@@ -336,5 +333,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="960" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.349.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1602342779934" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1602346905574">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.349.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1602346905574" />
   </component>
 </project>
