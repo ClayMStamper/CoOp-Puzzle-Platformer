@@ -52,6 +52,8 @@ public:
 private:
 
 	void StartTurnAroundTimer();
+	//when platform movement is inactive, timer needs to pause so it can stay on track
+	void PauseTurnAroundTimer();
 	void CalcMoveParams();
 
 };

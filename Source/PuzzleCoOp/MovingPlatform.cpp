@@ -27,8 +27,9 @@ void AMovingPlatform::BeginPlay()
 
         //set MoveSpeed and MoveDir
         CalcMoveParams();
-        
-        StartTurnAroundTimer();
+
+        if (!NeedsActivationToMove)
+            StartTurnAroundTimer();
     }
 }
 
@@ -52,13 +53,17 @@ void AMovingPlatform::Tick(float DeltaTime)
 
 void AMovingPlatform::Activate(UObject* ActivatedBy)
 {
+    if (bIsActivated)
+        return;
+    
     bIsActivated = true;
+    StartTurnAroundTimer();
 }
 
 void AMovingPlatform::Deactivate(UObject* DeactivatedBy)
 {
-    if (NeedsActivationToMove)
-        bIsActivated = false;
+    bIsActivated = false;
+    PauseTurnAroundTimer();
 }
 
 //
@@ -77,6 +82,11 @@ void AMovingPlatform::SwitchDirections()
 void AMovingPlatform::StartTurnAroundTimer()
 {
     GetWorld()->GetTimerManager().SetTimer(SwitchDirTimer, this, &AMovingPlatform::SwitchDirections, TimeToGoal, false);
+}
+
+void AMovingPlatform::PauseTurnAroundTimer()
+{
+    GetWorld()->GetTimerManager().PauseTimer(SwitchDirTimer);
 }
 
 void AMovingPlatform::CalcMoveParams()
