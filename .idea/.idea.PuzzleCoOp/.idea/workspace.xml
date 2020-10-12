@@ -24,14 +24,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Maps/Advanced_Lighting.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Maps/Minimal_Default.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Maps/StarterMap.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Level_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level_01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOp.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOp.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +62,7 @@
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOp.Build.cs" />
       </list>
     </option>
   </component>
@@ -309,7 +307,9 @@
       <workItem from="1602431410472" duration="1899000" />
       <workItem from="1602433592719" duration="842000" />
       <workItem from="1602459102868" duration="1217000" />
-      <workItem from="1602509768491" duration="5487000" />
+      <workItem from="1602509768491" duration="9239000" />
+      <workItem from="1602530104584" duration="1711000" />
+      <workItem from="1602531948833" duration="26000" />
     </task>
     <servers />
   </component>
