@@ -72,7 +72,7 @@ void AMovingPlatform::SwitchDirections()
 {
     MoveSpeed *= -1;
     // toggle current goal
-    CurrentGoal = CurrentGoal == StartPos ? TargetWorldPos : StartPos; 
+    CurrentGoal = CurrentGoal.Equals(StartPos) ? TargetWorldPos : StartPos; 
 }
 
 //called once at the start

@@ -43681,6 +43681,7 @@
       <e p="LaunchServer.bat" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="PuzzleCoOp.sln" t="IncludeFlat" />
+      <e p="PuzzleCoOp.sln.DotSettings" t="Include" />
       <e p="PuzzleCoOp.uproject" t="Include" />
       <e p="Source" t="Include">
         <e p="PuzzleCoOp" t="Include">
@@ -43688,8 +43689,6 @@
           <e p="ButtonActivatable.h" t="Include" />
           <e p="ButtonPlatform.cpp" t="Include" />
           <e p="ButtonPlatform.h" t="Include" />
-          <e p="Coroutine.cpp" t="Include" />
-          <e p="Coroutine.h" t="Include" />
           <e p="MovingPlatform.cpp" t="Include" />
           <e p="MovingPlatform.h" t="Include" />
           <e p="PuzzleCoOp.Build.cs" t="Include" />
@@ -43699,6 +43698,8 @@
           <e p="PuzzleCoOpCharacter.h" t="Include" />
           <e p="PuzzleCoOpGameMode.cpp" t="Include" />
           <e p="PuzzleCoOpGameMode.h" t="Include" />
+          <e p="PuzzleGameInstance.cpp" t="Include" />
+          <e p="PuzzleGameInstance.h" t="Include" />
         </e>
         <e p="PuzzleCoOp.Target.cs" t="Include" />
         <e p="PuzzleCoOpEditor.Target.cs" t="Include" />
