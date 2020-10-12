@@ -32,7 +32,7 @@ protected:
 	UPROPERTY(Transient, VisibleAnywhere, Category="Movement")
 	FVector MoveDir = FVector::ForwardVector;
 	UPROPERTY(Transient)
-	FTimerHandle SwitchDirTimer;
+	FTimerHandle FlipDirTimer;
 	UPROPERTY(EditAnywhere, Category="Movement")
 	bool NeedsActivationToMove = false;
 
@@ -51,10 +51,10 @@ public:
 	
 private:
 
-	void StartTurnAroundTimer();
-	//when platform movement is inactive, timer needs to pause so it can stay on track
-	void PauseTurnAroundTimer();
 	void CalcMoveParams();
+	
+	float SecRemainingOnFlipTimer = 0.f;
+	FVector StartPos, TargetWorldPos, CurrentGoal;
 
 };
 

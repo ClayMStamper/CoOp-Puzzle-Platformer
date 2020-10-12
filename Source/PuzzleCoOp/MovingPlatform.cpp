@@ -28,8 +28,6 @@ void AMovingPlatform::BeginPlay()
         //set MoveSpeed and MoveDir
         CalcMoveParams();
 
-        if (!NeedsActivationToMove)
-            StartTurnAroundTimer();
     }
 }
 
@@ -43,9 +41,15 @@ void AMovingPlatform::Tick(float DeltaTime)
         // if activated, then move
         if (bIsActivated)
         {
+            
             FVector Location = GetActorLocation();
             Location += MoveDir * MoveSpeed * DeltaTime;
             SetActorLocation(Location);
+
+            if (FVector::Distance(Location, CurrentGoal) < 10.f)
+            {
+                SwitchDirections();
+            }
         }
     }
 
@@ -57,43 +61,30 @@ void AMovingPlatform::Activate(UObject* ActivatedBy)
         return;
     
     bIsActivated = true;
-    StartTurnAroundTimer();
 }
 
 void AMovingPlatform::Deactivate(UObject* DeactivatedBy)
 {
     bIsActivated = false;
-    PauseTurnAroundTimer();
 }
-
-//
-// void AMovingPlatform::Activate(AButtonPlatform* ActivatedBy)
-// {
-//     if (HasAuthority())
-//         bIsActivated = true;
-// }
 
 void AMovingPlatform::SwitchDirections()
 {
     MoveSpeed *= -1;
-    StartTurnAroundTimer();
+    // toggle current goal
+    CurrentGoal = CurrentGoal == StartPos ? TargetWorldPos : StartPos; 
 }
 
-void AMovingPlatform::StartTurnAroundTimer()
-{
-    GetWorld()->GetTimerManager().SetTimer(SwitchDirTimer, this, &AMovingPlatform::SwitchDirections, TimeToGoal, false);
-}
-
-void AMovingPlatform::PauseTurnAroundTimer()
-{
-    GetWorld()->GetTimerManager().PauseTimer(SwitchDirTimer);
-}
-
+//called once at the start
 void AMovingPlatform::CalcMoveParams()
 {
+
+    StartPos = GetActorLocation();
+    
     // calc move direction towards target
-    const FVector TargetWorldPos = GetTransform().TransformPosition(TargetLocation);
+    TargetWorldPos = GetTransform().TransformPosition(TargetLocation);
     MoveDir = (TargetWorldPos- GetActorLocation()).GetSafeNormal();
+    CurrentGoal = TargetWorldPos;
 
     // calc move speed needed to get to target in "TimeToGoal" time
     const float DistanceToTravel = FVector::Distance(TargetWorldPos, GetActorLocation());
