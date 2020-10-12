@@ -20,8 +20,19 @@ public:
 	
 	virtual void Init() override;
 
-	UFUNCTION(Exec)
+	UFUNCTION(Exec, BlueprintCallable)
 	void Host();
-	UFUNCTION(Exec)
+	UFUNCTION(Exec, BlueprintCallable)
 	void Join(const FString &Address);
+
+	UFUNCTION(Exec, BlueprintCallable)
+	void LoadMenu();
+
+protected:
+
+	TSubclassOf<class UUserWidget> MenuClass;
+
+	void SetMenuInputMode(UUserWidget* Menu);
+	void SetPlayInputMode();
+	
 };
