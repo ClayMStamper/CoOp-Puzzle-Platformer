@@ -24,14 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Level_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level_01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Lobby.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Lobby.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +305,7 @@
       <workItem from="1602459102868" duration="1217000" />
       <workItem from="1602509768491" duration="9239000" />
       <workItem from="1602530104584" duration="1711000" />
-      <workItem from="1602531948833" duration="6317000" />
+      <workItem from="1602531948833" duration="6946000" />
     </task>
     <servers />
   </component>
