@@ -25,8 +25,8 @@
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Level_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level_01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Menu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Menu.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,7 +308,8 @@
       <workItem from="1602459102868" duration="1217000" />
       <workItem from="1602509768491" duration="9239000" />
       <workItem from="1602530104584" duration="1711000" />
-      <workItem from="1602531948833" duration="11324000" />
+      <workItem from="1602531948833" duration="13708000" />
+      <workItem from="1602604748918" duration="773000" />
     </task>
     <servers />
   </component>

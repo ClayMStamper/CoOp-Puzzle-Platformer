@@ -35,7 +35,7 @@ void UPuzzleGameInstance::Host()
     UWorld* World = GetWorld();
     check(World);
     World->ServerTravel("/Game/Maps/Level_01?Listen");
-    World->SetNetDriver()
+    // World->GetNetDriver()->SetNetDriverName(NAME_)
 
     SetPlayInputMode();
     
