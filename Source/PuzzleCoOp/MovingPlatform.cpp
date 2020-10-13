@@ -36,8 +36,8 @@ void AMovingPlatform::Tick(float DeltaTime)
     
     Super::Tick(DeltaTime);
     
-    if (HasAuthority())
-    {
+    // if (HasAuthority())
+    // {
         // if activated, then move
         if (bIsActivated)
         {
@@ -51,7 +51,7 @@ void AMovingPlatform::Tick(float DeltaTime)
                 SwitchDirections();
             }
         }
-    }
+    // }
 
 }
 

@@ -35,6 +35,7 @@ void UPuzzleGameInstance::Host()
     UWorld* World = GetWorld();
     check(World);
     World->ServerTravel("/Game/Maps/Level_01?Listen");
+    World->SetNetDriver()
 
     SetPlayInputMode();
     
@@ -62,6 +63,7 @@ void UPuzzleGameInstance::LoadMenu()
 void UPuzzleGameInstance::SetMenuInputMode(UUserWidget* Menu)
 {
     // setup menu params
+    Menu->bIsFocusable = true;
     Menu->AddToViewport();
     FInputModeUIOnly InputMode;
     InputMode.SetWidgetToFocus(Menu->TakeWidget());

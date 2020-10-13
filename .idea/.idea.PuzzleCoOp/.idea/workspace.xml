@@ -24,7 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02506d2e-a83d-459b-9b0d-d78152ba18fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzleCoOp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Level_01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level_01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +58,9 @@
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/ButtonPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.h" />
-        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleCoOp.Build.cs" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzleCoOp/MovingPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzleCoOp/PuzzleGameInstance.cpp" />
       </list>
     </option>
@@ -305,7 +308,7 @@
       <workItem from="1602459102868" duration="1217000" />
       <workItem from="1602509768491" duration="9239000" />
       <workItem from="1602530104584" duration="1711000" />
-      <workItem from="1602531948833" duration="6946000" />
+      <workItem from="1602531948833" duration="11324000" />
     </task>
     <servers />
   </component>
@@ -342,5 +345,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.349.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1602346905574" />
+    <state x="1002" y="613" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602599360743">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1002" y="613" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/2560.349.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1602599360743" />
   </component>
 </project>
